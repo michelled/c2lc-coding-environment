@@ -60,14 +60,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.App__app-heading {
-    text-align: center;
-    font-weight: normal;
-    font-size: 1.3rem;
-    margin: 1rem 1rem;
-    padding: 0 1rem;
-}
-
 .App__app-heading > a {
     color: black;
     &:hover {
@@ -94,7 +86,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 3;
     min-height: 12rem;
-    min-width: 19.5rem; 
+    min-width: 19.5rem;
 }
 
 .App__PenDownToggleSwitch-container {
@@ -147,7 +139,7 @@ body {
     width: 1.4em;
     padding: 0.2rem;
     border-radius: 5px;
-   
+
     &:focus {
         box-shadow:
             0 0 0 0.1rem black;

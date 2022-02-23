@@ -43,6 +43,7 @@ import { ReactComponent as HiddenBlock } from './svg/Hidden.svg';
 import KeyboardInputModal from './KeyboardInputModal';
 import ShareModal from './ShareModal';
 import { ReactComponent as ShareIcon} from './svg/Share.svg';
+import { ReactComponent as Logo} from './svg/Logo.svg';
 
 import type {ActionName, KeyboardInputSchemeName} from './KeyboardInputSchemes';
 import {findKeyboardEventSequenceMatches, isRepeatedEvent, isKeyboardInputSchemeName} from './KeyboardInputSchemes';
@@ -1153,16 +1154,14 @@ export class App extends React.Component<AppProps, AppState> {
                     onKeyDown={this.handleRootKeyDown}>
                     <header className='App__header'>
                         <div className='App__header-row'>
-                            <h1 className='App__app-heading'>
-                                <a
-                                    className='keyboard-shortcut-focus__app-header'
-                                    href='https://weavly.org'
-                                    aria-label={this.props.intl.formatMessage({id: 'App.appHeading.link'})}
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    <FormattedMessage id='App.appHeading'/>
-                                </a>
-                            </h1>
+                            <a
+                                className='keyboard-shortcut-focus__app-header'
+                                href='https://weavly.org'
+                                aria-label={this.props.intl.formatMessage({id: 'App.appHeading.link'})}
+                                target='_blank'
+                                rel='noopener noreferrer'>
+                                <Logo />
+                            </a>
                             <div className='App__header-menu'>
                                 <IconButton
                                     className="App__header-soundOptions"
